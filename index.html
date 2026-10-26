@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Undangan Pernikahan Amar & Siti Mariam</title>
+  <meta name="description" content="Assalamualaikum Warahmatullahi Wabarakatuh. Dengan penuh kebahagiaan, kami mengundang Anda untuk hadir di acara pernikahan Amar & Mariam.">
+
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Undangan Pernikahan Amar & Mariam">
+  <meta property="og:description" content="Buka undangan digital kami untuk melihat detail acara.">
+  <meta property="og:image" content="assets/images/preview.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Undangan Pernikahan Amar & Mariam">
+  <meta name="twitter:description" content="Buka undangan digital kami untuk melihat detail acara pernikahan.">
+  <meta name="twitter:image" content="assets/images/preview.png">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Amiri:wght@400;700&family=Cormorant+Garamond:wght@400;600;700&family=Great+Vibes&family=Montserrat:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="terkunci">
+
+  <!-- COVER -->
+  <section id="cover" class="cover">
+    <div class="cover-isi">
+      <p class="arab">بسم الله الرحمن الرحيم</p>
+      <p class="kecil">THE WEDDING OF</p>
+      <h1 class="nama-besar">Amar Ma'ruf N.M <span>&</span> Siti Mariam</h1>
+      <p id="tglCover" class="tanggal"></p>
+      <div class="kepada">
+        <p>Kepada Yth.<br>Bapak/Ibu/Saudara/i</p>
+        <p id="namaTamu" class="nama-tamu">Tamu Undangan</p>
+      </div>
+      <button id="btnBuka" class="btn" type="button">BUKA UNDANGAN</button>
+    </div>
+  </section>
+
+  <button id="tombolMusik" class="tombol-musik" type="button" aria-label="Putar musik" hidden>
+    <svg viewBox="0 0 24 24" width="22" height="22" fill="currentColor" aria-hidden="true"><path d="M9 3v10.55A4 4 0 1 0 11 17V7h6V3H9z"/></svg>
+  </button>
+  <audio id="musik" loop preload="auto"></audio>
+
+  <main>
+    <!-- HERO -->
+    <section class="hero bagian">
+      <div class="reveal">
+        <p class="arab kecil-arab">اللهم صل على محمد وعلى آل محمد</p>
+        <p class="kecil">THE WEDDING OF</p>
+        <h2 class="nama-besar">Amar Ma'ruf N.M <span>&</span> Siti Mariam</h2>
+        <p id="tglHero" class="tanggal"></p>
+        <p class="gulir">Gulir ke bawah ↓</p>
+      </div>
+    </section>
+
+    <!-- PEMBUKA -->
+    <section class="bagian pembuka">
+      <div class="reveal">
+        <p class="salam">ASSALAMUALAIKUM WR. WB.</p>
+        <h3>Dengan Mengharap Ridho Allah SWT</h3>
+        <p>Merupakan suatu kehormatan dan kebahagiaan bagi kami apabila Bapak/Ibu/Saudara/i berkenan hadir untuk memberikan doa restu pada pernikahan kami.</p>
+      </div>
+    </section>
+
+    <!-- MEMPELAI -->
+    <section class="bagian mempelai">
+      <p class="label reveal">MEMPELAI</p>
+      <h2 class="judul reveal">Pengantin</h2>
+
+      <div class="kartu-mempelai reveal">
+        <div class="foto"><img src="assets/images/wanita.jpg" alt="Mempelai Wanita" loading="lazy"></div>
+        <h3 id="namaWanita">Siti Mariam</h3>
+        <p class="ortu">Putri dari<br><span id="ortuWanita"></span></p>
+      </div>
+
+      <p class="dan reveal">&</p>
+
+      <div class="kartu-mempelai reveal">
+        <div class="foto"><img src="assets/images/pria.jpg" alt="Mempelai Pria" loading="lazy"></div>
+        <h3 id="namaPria">Amar Ma'ruf N.M</h3>
+        <p class="ortu">Putra dari<br><span id="ortuPria"></span></p>
+      </div>
+    </section>
+
+    <!-- AYAT -->
+    <section class="bagian ayat">
+      <div class="reveal">
+        <p class="arab ayat-arab">وَمِنْ اٰيٰتِهٖٓ اَنْ خَلَقَ لَكُمْ مِّنْ اَنْفُسِكُمْ اَزْوَاجًا لِّتَسْكُنُوْٓا اِلَيْهَا وَجَعَلَ بَيْنَكُمْ مَّوَدَّةً وَّرَحْمَةًۗ اِنَّ فِيْ ذٰلِكَ لَاٰيٰتٍ لِّقَوْمٍ يَّتَفَكَّرُوْنَ ۝٢١</p>
+        <p class="terjemah">Di antara tanda-tanda (kebesaran)-Nya ialah bahwa Dia menciptakan pasangan-pasangan untukmu dari (jenis) dirimu sendiri agar kamu merasa tenteram kepadanya. Dia menjadikan di antaramu rasa cinta dan kasih sayang. Sesungguhnya pada yang demikian itu benar-benar terdapat tanda-tanda (kebesaran Allah) bagi kaum yang berpikir.</p>
+        <p class="sumber">QS. Ar-Rum: 21</p>
+      </div>
+    </section>
+
+    <!-- SAVE THE DATE -->
+    <section class="bagian save">
+      <p class="label reveal">SAVE THE DATE</p>
+      <h2 class="judul reveal">Menuju Hari Bahagia</h2>
+      <div class="hitung reveal" role="timer" aria-live="off">
+        <div><b id="cdHari">00</b><span>Hari</span></div>
+        <div><b id="cdJam">00</b><span>Jam</span></div>
+        <div><b id="cdMenit">00</b><span>Menit</span></div>
+        <div><b id="cdDetik">00</b><span>Detik</span></div>
+      </div>
+      <p id="cdInfo" class="info-hitung"></p>
+      <a id="mapsUtama" class="btn" href="#" target="_blank" rel="noopener">LIHAT LOKASI</a>
+    </section>
+
+    <!-- ACARA -->
+    <section class="bagian acara">
+      <p class="label reveal">DETAIL ACARA</p>
+      <h2 class="judul reveal">Akad & Resepsi</h2>
+
+      <article class="kartu reveal">
+        <h3>AKAD NIKAH</h3>
+        <p id="akadTgl" class="tebal"></p>
+        <p id="akadJam"></p>
+        <p id="akadTempat" class="tebal"></p>
+        <p id="akadAlamat"></p>
+        <a id="akadMaps" class="btn btn-ghost" href="#" target="_blank" rel="noopener">LIHAT LOKASI</a>
+      </article>
+
+      <article class="kartu reveal">
+        <h3>RESEPSI</h3>
+        <p id="resepsiTgl" class="tebal"></p>
+        <p id="resepsiJam"></p>
+        <p id="resepsiTempat" class="tebal"></p>
+        <p id="resepsiAlamat"></p>
+        <a id="resepsiMaps" class="btn btn-ghost" href="#" target="_blank" rel="noopener">LIHAT LOKASI</a>
+      </article>
+    </section>
+
+    <!-- UCAPAN -->
+    <section class="bagian ucapan-bagian">
+      <p class="label reveal">WEDDING WISHES</p>
+      <h2 class="judul reveal">Ucapan & Doa</h2>
+      <p class="reveal">Kirimkan doa dan ucapan terbaik untuk kedua mempelai</p>
+      <button id="btnUcapan" class="btn reveal" type="button" aria-expanded="false" aria-controls="kotakUcapan">✉ KIRIM UCAPAN & DOA ↓</button>
+
+      <div id="kotakUcapan" class="kotak" hidden>
+        <form id="formUcapan" autocomplete="off">
+          <label for="nama">Nama</label>
+          <input id="nama" name="nama" type="text" maxlength="60" placeholder="Nama Anda" required>
+
+          <label for="hadir">Konfirmasi Kehadiran</label>
+          <select id="hadir" name="hadir" required>
+            <option value="" disabled selected>Pilih kehadiran</option>
+            <option value="hadir">Hadir</option>
+            <option value="tidak">Tidak dapat hadir</option>
+            <option value="ragu">Masih belum pasti</option>
+          </select>
+
+          <label for="pesan">Ucapan dan Doa</label>
+          <textarea id="pesan" name="pesan" rows="4" maxlength="500" placeholder="Tulis ucapan dan doa..." required></textarea>
+
+          <button class="btn" type="submit">KIRIM UCAPAN</button>
+          <p id="statusUcapan" class="status" role="status"></p>
+        </form>
+      </div>
+
+      <h3 class="sub">Ucapan dari Tamu</h3>
+      <div id="daftarUcapan" class="daftar"><p class="kosong">Belum ada ucapan.</p></div>
+    </section>
+
+    <!-- GIFT -->
+    <section class="bagian gift">
+      <p class="label reveal">WEDDING GIFT</p>
+      <h2 class="judul reveal">Digital Gift</h2>
+      <p class="reveal">Doa restu Anda merupakan hadiah terindah bagi kami</p>
+      <button id="btnGift" class="btn reveal" type="button" aria-expanded="false" aria-controls="kotakGift">BUKA KARTU DIGITAL ↓</button>
+      <div id="kotakGift" class="kotak" hidden>
+        <div id="giftList" class="gift-list"></div>
+      </div>
+    </section>
+
+    <!-- PENUTUP -->
+    <footer class="bagian penutup">
+      <div class="reveal">
+        <h2 class="judul">Terima Kasih</h2>
+        <p>Merupakan suatu kebahagiaan bagi kami apabila Bapak/Ibu/Saudara/i berkenan hadir dan memberikan doa restu.</p>
+        <p class="kecil">Kami yang berbahagia</p>
+        <p class="arab penutup-arab">أمر معروف نهي منكر &amp; ستي مريم</p>
+        <a id="gantiMusik" class="btn btn-ghost" href="#">GANTI MUSIK</a>
+        <p class="hak">@amr 2026</p>
+      </div>
+    </footer>
+  </main>
+
+  <script src="js/config.js"></script>
+  <script src="js/firebase-config.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/10.12.2/firebase-app-compat.js" defer></script>
+  <script src="https://www.gstatic.com/firebasejs/10.12.2/firebase-firestore-compat.js" defer></script>
+  <script src="js/script.js" defer></script>
+  <script src="js/guestbook.js" defer></script>
+</body>
+</html>
